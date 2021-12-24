@@ -1,0 +1,56 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container a
+{
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 2px solid orange;
+    margin: 0px 20px;
+}
+
+.btn
+{
+    transition: 1 ease all;
+}
+
+.btn::before
+{
+    background: orange;
+    content: "";
+    z-index: -1;
+    transition: .4s ease all;
+}
+
+.btn::before
+{
+    width: 0;
+    height: 100%;
+}
+
+.btn:hover::before
+{
+    width: 100% ;
+}
+
+.btn-1:hover::before
+{
+    width: 100px;
+    height: 0;
+    
+}
